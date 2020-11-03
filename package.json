@@ -2,6 +2,7 @@
   "name": "react-omdb-app",
   "version": "1.0.0",
   "description": "",
+  "homepage": "http://richardg91-bien/React-omdb",
   "main": "webpack.config.js",
   "dependencies": {
     "@babel/core": "^7.12.3",
@@ -30,7 +31,9 @@
   "devDependencies": {},
   "scripts": {
     "start": "webpack-cli serve --mode development",
-    "production": "webpack --mode production"
+    "production": "webpack --mode production",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
